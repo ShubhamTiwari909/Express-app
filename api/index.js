@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const routes = require("../SimpleRoutes/index");
-const query = require("../QueryParams/index.js");
-const postReq = require("../PostReq/index.js");
+const routes = require("../routes/SimpleRoutes/index");
+const query = require("../routes/QueryParams/index.js");
+const postReq = require("../routes/PostReq/index.js");
 
 // parse json data
 app.use(express.json());
