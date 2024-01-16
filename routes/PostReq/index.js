@@ -11,7 +11,7 @@ router.post("/users/add", (request, response) => {
   response.status(200).send(users);
 });
 
-router.post("/users/remove", (request, response) => {
+router.delete("/users/remove", (request, response) => {
   const { body } = request;
 
   if (!body.id) return response.status(400).send({ msg: "Bad Request" });
@@ -20,7 +20,7 @@ router.post("/users/remove", (request, response) => {
   response.status(200).send(users);
 });
 
-router.post("/users/update", (request, response) => {
+router.put("/users/update", (request, response) => {
   const { body } = request;
 
   if (!body) return response.status(400).send({ msg: "Bad Request" });
