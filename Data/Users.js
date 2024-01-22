@@ -20,10 +20,10 @@ for (let i = 1; i <= 10; i++) {
     id: `${i}`,
     username: `user${i}`,
     displayName: `User ${i}`,
+    password: `password${i}`,
   };
 
   mockUserList.push(user);
 }
 
-
-module.exports = {users,mockUserList}
+module.exports = { users, mockUserList };

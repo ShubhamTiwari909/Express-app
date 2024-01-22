@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { mockUserList } = require("../Data/Users");
+const { mockUserList } = require("../../Data/Users");
 const {
   query,
   validationResult,
