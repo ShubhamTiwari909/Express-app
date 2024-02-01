@@ -2,6 +2,8 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const router = express.Router();
 
+console.log("Checking the commit")
+
 router.use(cookieParser());
 
 router.get("/login", (request, response) => {
