@@ -2,7 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const router = express.Router();
 
-console.log("Checking the commit")
+console.log("Checking the commit 2")
 
 router.use(cookieParser());
 
